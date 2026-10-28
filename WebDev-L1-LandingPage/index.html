@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA PRO X | Flagship Wireless Noise-Cancelling Headphones</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky / Fixed Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Aura Sound Home">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" stroke="url(#logo-grad)" stroke-width="2.5" />
+          <path d="M10 16C10 13 12 11 16 11C20 11 22 13 22 16C22 19 20 21 16 21" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M13 16V17C13 18.5 14 19 16 19" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="logo-grad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#38bdf8" />
+              <stop offset="1" stop-color="#818cf8" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">AURA<span>SOUND</span></span>
+      </a>
+
+      <!-- Hidden checkbox for pure CSS mobile menu toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#specs" class="nav-link">Tech Specs</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#pricing" class="btn-nav">Pre-Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Next-Generation Spatial Audio • Aura Pro X</span>
+        </div>
+        <h1 class="hero-title">
+          Pure Acoustic <span class="text-gradient">Euphoria</span>. Zero Distractions.
+        </h1>
+        <p class="hero-description">
+          Engineered with precision custom 40mm beryllium drivers, intelligent 48dB hybrid active noise cancellation, and an industry-leading 65-hour battery life. Experience music the way artists intended.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#pricing" class="btn btn-primary">
+            <span>Pre-Order Aura Pro X</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#specs" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+            <span>Explore Engineering</span>
+          </a>
+        </div>
+
+        <!-- Social Proof Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4 class="stat-number">48<span class="stat-unit">dB</span></h4>
+            <p class="stat-label">Smart Hybrid ANC</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h4 class="stat-number">65<span class="stat-unit">Hrs</span></h4>
+            <p class="stat-label">Non-Stop Playback</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h4 class="stat-number">4.9<span class="stat-unit">★</span></h4>
+            <p class="stat-label">Over 14,000+ Reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card with Headphone Illustration & Floating Badges -->
+      <div class="hero-visual">
+        <div class="headphone-card">
+          <div class="headphone-halo"></div>
+          
+          <!-- Headphone Vector Illustration -->
+          <svg class="headphone-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Headband Outer Arc -->
+            <path d="M70 230 C70 100, 330 100, 330 230" stroke="url(#headband-grad)" stroke-width="26" stroke-linecap="round" />
+            <!-- Headband Inner Cushion -->
+            <path d="M100 200 C110 120, 290 120, 300 200" stroke="#1e293b" stroke-width="14" stroke-linecap="round" />
+            <path d="M120 180 C135 130, 265 130, 280 180" stroke="#334155" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 6" />
+
+            <!-- Left Slider & Arm -->
+            <rect x="62" y="220" width="16" height="45" rx="6" fill="#475569" />
+            <rect x="66" y="240" width="8" height="30" rx="3" fill="#0ea5e9" />
+            
+            <!-- Right Slider & Arm -->
+            <rect x="322" y="220" width="16" height="45" rx="6" fill="#475569" />
+            <rect x="326" y="240" width="8" height="30" rx="3" fill="#0ea5e9" />
+
+            <!-- Left Ear Cup Housing -->
+            <g filter="url(#drop-glow)">
+              <ellipse cx="70" cy="285" rx="38" ry="58" fill="url(#cup-grad-left)" />
+              <ellipse cx="70" cy="285" rx="28" ry="46" fill="#0f172a" />
+              <!-- Driver Accents -->
+              <circle cx="70" cy="285" r="16" stroke="url(#accent-ring)" stroke-width="3" />
+              <circle cx="70" cy="285" r="7" fill="#38bdf8" />
+              <!-- Acoustic Grill Lines -->
+              <path d="M60 270 L80 270 M56 280 L84 280 M56 290 L84 290 M60 300 L80 300" stroke="#334155" stroke-width="1.5" />
+            </g>
+
+            <!-- Right Ear Cup Housing -->
+            <g filter="url(#drop-glow)">
+              <ellipse cx="330" cy="285" rx="38" ry="58" fill="url(#cup-grad-right)" />
+              <ellipse cx="330" cy="285" rx="28" ry="46" fill="#0f172a" />
+              <!-- Driver Accents -->
+              <circle cx="330" cy="285" r="16" stroke="url(#accent-ring)" stroke-width="3" />
+              <circle cx="330" cy="285" r="7" fill="#818cf8" />
+              <!-- Acoustic Grill Lines -->
+              <path d="M320 270 L340 270 M316 280 L344 280 M316 290 L344 290 M320 300 L340 300" stroke="#334155" stroke-width="1.5" />
+            </g>
+
+            <!-- Soundwave Ripple Accents -->
+            <path d="M25 285 C20 270, 20 300, 25 285" stroke="#38bdf8" stroke-width="2" opacity="0.6" />
+            <path d="M12 285 C6 260, 6 310, 12 285" stroke="#38bdf8" stroke-width="2" opacity="0.3" />
+            <path d="M375 285 C380 270, 380 300, 375 285" stroke="#818cf8" stroke-width="2" opacity="0.6" />
+            <path d="M388 285 C394 260, 394 310, 388 285" stroke="#818cf8" stroke-width="2" opacity="0.3" />
+
+            <defs>
+              <linearGradient id="headband-grad" x1="70" y1="120" x2="330" y2="120" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1e293b" />
+                <stop offset="0.5" stop-color="#38bdf8" />
+                <stop offset="1" stop-color="#1e293b" />
+              </linearGradient>
+              <linearGradient id="cup-grad-left" x1="32" y1="230" x2="108" y2="340" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1e293b" />
+                <stop offset="1" stop-color="#090d16" />
+              </linearGradient>
+              <linearGradient id="cup-grad-right" x1="292" y1="230" x2="368" y2="340" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1e293b" />
+                <stop offset="1" stop-color="#090d16" />
+              </linearGradient>
+              <linearGradient id="accent-ring" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#38bdf8" />
+                <stop offset="1" stop-color="#818cf8" />
+              </linearGradient>
+              <filter id="drop-glow" x="20" y="210" width="370" height="170" filterUnits="userSpaceOnUse">
+                <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0284c7" flood-opacity="0.25"/>
+              </filter>
+            </defs>
+          </svg>
+
+          <!-- Floating Spec Badges -->
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon">🎧</div>
+            <div>
+              <p class="badge-title">Hi-Res Certified</p>
+              <p class="badge-sub">24-bit / 96kHz LDAC</p>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon">⚡</div>
+            <div>
+              <p class="badge-title">Rapid Flash Charge</p>
+              <p class="badge-sub">10 min = 6 hrs playback</p>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <div class="badge-icon">🛡️</div>
+            <div>
+              <p class="badge-title">ErgoFit Memory Foam</p>
+              <p class="badge-sub">Zero pressure point seal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 1: Features -->
+  <section class="features-section" id="features">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-pill">PRECISION ENGINEERING</span>
+        <h2 class="section-title">Designed for Audiophiles, Built for Everyday Life</h2>
+        <p class="section-subtitle">
+          Every contour, component, and transducer has been mathematically calculated to deliver unmatched clarity and immersive soundscapes.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">48dB Adaptive Hybrid ANC</h3>
+          <p class="feature-text">
+            Triple internal and external microphone arrays sample ambient sounds 380,000 times per second, dynamically countering subway rumbles and jet engines.
+          </p>
+          <span class="feature-tag">QuietShield™ v4.2</span>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-indigo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+          </div>
+          <h3 class="feature-title">40mm Beryllium Drivers</h3>
+          <p class="feature-text">
+            Custom vapor-deposited beryllium diaphragms achieve razor-sharp transient response, punchy sub-bass down to 10Hz, and silky-smooth distortion-free trebles up to 42kHz.
+          </p>
+          <span class="feature-tag">Hi-Res Audio Certified</span>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">65-Hour Battery Life</h3>
+          <p class="feature-text">
+            Travel from London to Tokyo and back on a single charge. When you are in a rush, a quick 10-minute USB-C boost gives you over 6 hours of high-fidelity playback.
+          </p>
+          <span class="feature-tag">Fast Charge USB-C</span>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-emerald">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+            </svg>
+          </div>
+          <h3 class="feature-title">360° Spatial Audio Tracking</h3>
+          <p class="feature-text">
+            Integrated 6-axis gyroscopic sensors track the micro-movements of your head, re-anchoring sound channels in real-time to mimic a live symphony hall or IMAX cinema.
+          </p>
+          <span class="feature-tag">Head-Tracking 3D</span>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Bluetooth 5.4 Multipoint</h3>
+          <p class="feature-text">
+            Pair seamlessly with your laptop, smartphone, and tablet simultaneously. Watch a movie on your computer and answer an incoming phone call without lifting a finger.
+          </p>
+          <span class="feature-tag">Dual-Device Sync</span>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper icon-rose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Ultra-Plush Vegan Leather</h3>
+          <p class="feature-text">
+            Slow-rebound acoustic memory foam cups encased in breathable, hypoallergenic protein leather prevent heat buildup, ensuring weightless comfort for 8+ hour sessions.
+          </p>
+          <span class="feature-tag">Ergonomic Fit 250g</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 2: Technical Specifications & About -->
+  <section class="specs-section" id="specs">
+    <div class="section-container">
+      <div class="specs-wrapper">
+        <div class="specs-intro">
+          <span class="section-pill">UNCOMPROMISING METRICS</span>
+          <h2 class="section-title">Acoustic Specs That Speak for Themselves</h2>
+          <p class="section-subtitle">
+            We don’t cut corners. From gold-plated solder joints to titanium-alloy hinges, every element of Aura Pro X is benchmarked against international studio audio standards.
+          </p>
+          
+          <div class="spec-highlight-box">
+            <div class="highlight-item">
+              <span class="highlight-val">< 0.05%</span>
+              <span class="highlight-desc">Total Harmonic Distortion (THD)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-val">20ms</span>
+              <span class="highlight-desc">Ultra-Low Gaming Latency</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-val">250g</span>
+              <span class="highlight-desc">Ultra-Lightweight Ergonomics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="specs-table-card">
+          <h3 class="specs-table-title">Hardware Specifications</h3>
+          <div class="spec-row">
+            <span class="spec-key">Acoustic Drivers</span>
+            <span class="spec-val">40mm Custom Beryllium Dome</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Frequency Response</span>
+            <span class="spec-val">10 Hz – 42,000 Hz</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Active Noise Cancellation</span>
+            <span class="spec-val">Hybrid ANC (-48dB Peak Depth)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Wireless Connectivity</span>
+            <span class="spec-val">Bluetooth 5.4 + LE Audio + 2.4GHz Dongle</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Supported Codecs</span>
+            <span class="spec-val">LDAC, aptX Lossless, AAC, SBC, LC3</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Battery Life (ANC On)</span>
+            <span class="spec-val">50 Hours Continuous</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Battery Life (ANC Off)</span>
+            <span class="spec-val">65 Hours Continuous</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Charging Interface</span>
+            <span class="spec-val">USB Type-C (5V / 2A Fast Charge)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Microphone Array</span>
+            <span class="spec-val">6 Beamforming Mics + AI Wind Reduction</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Water Resistance</span>
+            <span class="spec-val">IPX4 Splash & Sweat Resistant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 3: Testimonials / Reviews -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-pill">CRITICAL ACCLAIM</span>
+        <h2 class="section-title">Loved by Producers, Engineers, and Travelers</h2>
+        <p class="section-subtitle">Read how industry professionals and audiophiles rate their listening experience with Aura Pro X.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">
+            "The spatial separation and low-end clarity rival my $1,500 open-back studio reference monitors. I wore them on a 14-hour transpacific flight and never felt a hint of ear fatigue."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-1">DA</div>
+            <div class="author-info">
+              <h4 class="author-name">David Anderson</h4>
+              <p class="author-role">Grammy-Nominated Sound Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card featured-testimonial">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">
+            "The ANC is legitimately spooky. You turn it on and a roaring café simply vanishes into pin-drop silence. Aura Sound has built the undisputed wireless flagship of 2026."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-2">SC</div>
+            <div class="author-info">
+              <h4 class="author-name">Sarah Chen</h4>
+              <p class="author-role">Lead Tech Editor @ AudioSphere</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">
+            "Multipoint pairing switching between my MacBook and phone is instantaneous. The microphone clarity on client Zoom calls is crisp and totally blocks street siren noise."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-3">MR</div>
+            <div class="author-info">
+              <h4 class="author-name">Marcus Reynolds</h4>
+              <p class="author-role">Software Architect & Digital Nomad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Pre-Order Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-container">
+      <div class="pricing-card">
+        <div class="pricing-badge">LIMITED PRE-ORDER BATCH • SHIPS WORLDWIDE</div>
+        <h2 class="pricing-headline">Claim Your Aura Pro X Today</h2>
+        <p class="pricing-sub">Order now and receive a complimentary ballistic nylon travel case, braided 3.5mm audiophile cable, and 2-year premium warranty.</p>
+        
+        <div class="price-display">
+          <span class="currency">$</span>
+          <span class="amount">299</span>
+          <span class="original-price">$399 MSRP</span>
+        </div>
+        
+        <div class="pricing-perks">
+          <div class="perk-item">
+            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span>30-Day Risk-Free Money Back Guarantee</span>
+          </div>
+          <div class="perk-item">
+            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span>Free Express Worldwide Shipping</span>
+          </div>
+          <div class="perk-item">
+            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span>2-Year Comprehensive Hardware Warranty</span>
+          </div>
+        </div>
+
+        <div class="pricing-cta-wrap">
+          <a href="#contact" class="btn btn-primary btn-large">
+            <span>Reserve For $299</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Newsletter Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-pill">GET IN TOUCH</span>
+          <h2 class="section-title">Have Questions Before Ordering?</h2>
+          <p class="section-subtitle">
+            Our audio concierge team is on standby 24/7 to help with technical queries, enterprise batch orders, and press inquiries.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail-row">
+              <span class="detail-icon">📍</span>
+              <span>Aura Sound Acoustics Lab, San Francisco, CA & Bengaluru, India</span>
+            </div>
+            <div class="contact-detail-row">
+              <span class="detail-icon">✉️</span>
+              <span>concierge@aurasound.audio</span>
+            </div>
+            <div class="contact-detail-row">
+              <span class="detail-icon">📞</span>
+              <span>+1 (800) 555-AURA (Toll-Free)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="#contact" method="get">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Alex Morgan" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="alex@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Your Message or Inquiry</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="I'm interested in testing Aura Pro X for our studio..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Social Links -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" stroke="#38bdf8" stroke-width="2.5" />
+              <path d="M10 16C10 13 12 11 16 11C20 11 22 13 22 16" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+            <span class="logo-text">AURA<span>SOUND</span></span>
+          </a>
+          <p class="footer-desc">
+            Redefining high-fidelity acoustic performance with intelligent noise-cancellation and aerospace-grade materials.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#specs">Engineering Specs</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#pricing">Pre-Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Oasis Infobyte</h4>
+          <ul class="footer-links">
+            <li><a href="#">Task 1: Landing Page</a></li>
+            <li><a href="../WebDev-L1-Portfolio/index.html">Task 2: Portfolio</a></li>
+            <li><a href="../WebDev-L1-TempConverter/index.html">Task 3: Temp Converter</a></li>
+            <li><a href="#">Level 1 Internship</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Connect With Us</h4>
+          <p class="footer-sub-text">Follow our acoustics research and release updates:</p>
+          <div class="social-icons">
+            <!-- GitHub -->
+            <a href="https://github.com/pinjaridivyesh-glitch" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- Twitter/X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aura Sound Acoustics Inc. Built for OASIS INFOBYTE Internship Level 1 - Task 1.</p>
+        <p class="footer-credits">Developed by Divyesh | B.Tech AIML Student</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

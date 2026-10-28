@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precision Temperature Converter | OASIS INFOBYTE</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Orbs -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Header / Nav Link Bar -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="app-brand">
+        <span class="brand-icon">🌡️</span>
+        <span class="brand-title">THERMO<span>SYNC</span></span>
+      </div>
+      <div class="header-links">
+        <a href="../WebDev-L1-LandingPage/index.html" class="header-link">Task 1: Landing Page</a>
+        <a href="../WebDev-L1-Portfolio/index.html" class="header-link">Task 2: Portfolio</a>
+        <span class="header-badge">Task 3: Active</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Wrapper -->
+  <main class="main-wrapper">
+    <div class="converter-card" id="converterCard">
+      
+      <!-- Top Title Area -->
+      <div class="card-header text-center">
+        <div class="badge-pill">OASIS INFOBYTE LEVEL 1</div>
+        <h1 class="card-title">Temperature Converter</h1>
+        <p class="card-subtitle">Convert seamlessly between Celsius, Fahrenheit, and Kelvin with mathematical accuracy and absolute zero validation.</p>
+      </div>
+
+      <!-- Quick Preset Buttons -->
+      <div class="preset-container">
+        <span class="preset-label">Quick Presets:</span>
+        <div class="preset-chips">
+          <button type="button" class="chip-btn" data-val="0" data-unit="c">Freezing (0°C)</button>
+          <button type="button" class="chip-btn" data-val="37" data-unit="c">Body Temp (37°C)</button>
+          <button type="button" class="chip-btn" data-val="100" data-unit="c">Boiling (100°C)</button>
+          <button type="button" class="chip-btn" data-val="-273.15" data-unit="c">Abs Zero (-273.15°C)</button>
+        </div>
+      </div>
+
+      <!-- Converter Form -->
+      <form class="converter-form" id="tempConverterForm" novalidate>
+        
+        <!-- Input Row -->
+        <div class="input-controls-grid">
+          
+          <!-- Temperature Input -->
+          <div class="control-group">
+            <label for="tempInput" class="control-label">
+              <span>Enter Temperature</span>
+              <span class="label-hint">(Numbers only)</span>
+            </label>
+            <div class="input-field-wrap">
+              <input 
+                type="text" 
+                id="tempInput" 
+                name="temperature"
+                placeholder="e.g. 25, -10.5, 98.6" 
+                autocomplete="off"
+                required
+              >
+              <button type="button" class="clear-input-btn" id="clearInputBtn" title="Clear input" aria-label="Clear temperature input">&times;</button>
+            </div>
+          </div>
+
+          <!-- Unit Selector Dropdown -->
+          <div class="control-group">
+            <label for="sourceUnit" class="control-label">
+              <span>From Unit</span>
+              <span class="label-hint">(Select scale)</span>
+            </label>
+            <div class="select-field-wrap">
+              <select id="sourceUnit" name="sourceUnit">
+                <option value="c" selected>Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+                <option value="k">Kelvin (K)</option>
+              </select>
+              <div class="select-arrow">▼</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+          <button type="submit" class="btn btn-convert" id="convertBtn">
+            <svg class="btn-svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+            </svg>
+            <span>Convert Temperature</span>
+          </button>
+
+          <button type="button" class="btn btn-reset" id="resetBtn">
+            <span>Reset All</span>
+          </button>
+        </div>
+
+      </form>
+
+      <!-- Error / Alert Message Area (Validation & Absolute Zero Edge Case) -->
+      <div class="alert-box" id="errorAlert" role="alert" style="display: none;">
+        <div class="alert-icon" id="alertIcon">⚠️</div>
+        <div class="alert-content">
+          <h4 class="alert-title" id="alertTitle">Input Error</h4>
+          <p class="alert-msg" id="alertMessage">Please enter a valid numeric temperature value.</p>
+        </div>
+      </div>
+
+      <!-- Result Display Area -->
+      <div class="results-wrapper" id="resultsArea" style="display: none;">
+        
+        <!-- Thermal State Indicator -->
+        <div class="thermal-status-bar" id="thermalStatusBar">
+          <span class="thermal-icon" id="thermalIcon">🌤️</span>
+          <span class="thermal-text" id="thermalText">Room Temperature</span>
+        </div>
+
+        <!-- Converted Value Cards Grid -->
+        <div class="results-grid">
+          
+          <!-- Result Card 1: Celsius -->
+          <div class="result-card" id="cardCelsius">
+            <div class="result-card-header">
+              <span class="scale-name">Celsius</span>
+              <span class="scale-symbol">°C</span>
+            </div>
+            <div class="result-number" id="valCelsius">25.00</div>
+            <div class="result-unit-label">Degrees Celsius</div>
+          </div>
+
+          <!-- Result Card 2: Fahrenheit -->
+          <div class="result-card" id="cardFahrenheit">
+            <div class="result-card-header">
+              <span class="scale-name">Fahrenheit</span>
+              <span class="scale-symbol">°F</span>
+            </div>
+            <div class="result-number" id="valFahrenheit">77.00</div>
+            <div class="result-unit-label">Degrees Fahrenheit</div>
+          </div>
+
+          <!-- Result Card 3: Kelvin -->
+          <div class="result-card" id="cardKelvin">
+            <div class="result-card-header">
+              <span class="scale-name">Kelvin</span>
+              <span class="scale-symbol">K</span>
+            </div>
+            <div class="result-number" id="valKelvin">298.15</div>
+            <div class="result-unit-label">Kelvins</div>
+          </div>
+        </div>
+
+        <!-- Mathematical Calculation Breakdown & Formulas -->
+        <div class="formula-breakdown-card">
+          <h3 class="formula-heading">
+            <svg class="formula-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+            </svg>
+            Applied Conversion Formulas
+          </h3>
+          <div class="formula-steps" id="formulaSteps">
+            <!-- Dynamically injected via script.js -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Reference Standards Reference Guide -->
+      <div class="standards-footer-guide">
+        <h4 class="guide-title">Standard Physical Benchmarks</h4>
+        <div class="guide-grid">
+          <div class="guide-item">
+            <span class="guide-term">Absolute Zero</span>
+            <span class="guide-val">-273.15 °C | 0 K | -459.67 °F</span>
+          </div>
+          <div class="guide-item">
+            <span class="guide-term">Water Freezing</span>
+            <span class="guide-val">0.00 °C | 273.15 K | 32.00 °F</span>
+          </div>
+          <div class="guide-item">
+            <span class="guide-term">Human Normal</span>
+            <span class="guide-val">37.00 °C | 310.15 K | 98.60 °F</span>
+          </div>
+          <div class="guide-item">
+            <span class="guide-term">Water Boiling</span>
+            <span class="guide-val">100.00 °C | 373.15 K | 212.00 °F</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Temperature Converter | Developed for <strong>Oasis Infobyte Internship (Level 1 - Task 3)</strong></p>
+      <p class="author-tag">Built by Divyesh | B.Tech AIML Student</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

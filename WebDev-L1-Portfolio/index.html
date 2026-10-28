@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Divyesh">
+  <title>Divyesh | AIML Student Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="code-bracket">&lt;</span>
+        <span class="brand-name">Divyesh</span>
+        <span class="brand-suffix">.dev</span>
+        <span class="code-bracket">/&gt;</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-outline btn-sm">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-text">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Available for Web Development Internships</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Divyesh</span>
+        </h1>
+        <h2 class="hero-role">
+          <span class="role-prefix">&gt; </span>AIML Student & Web Developer
+        </h2>
+        <p class="hero-bio">
+          Undergraduate Artificial Intelligence & Machine Learning student passionate about front-end engineering, responsive interfaces, and interactive intelligent web applications. Turning ideas into elegant, high-performance code.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <span class="social-label">Follow & Connect:</span>
+          <div class="social-links">
+            <a href="https://github.com/pinjaridivyesh-glitch" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/pinjaridivyesh-glitch" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:divyesh.aiml@gmail.com" class="social-icon-btn" aria-label="Email Me">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar Showcase Card -->
+      <div class="hero-visual">
+        <div class="avatar-card">
+          <div class="avatar-ring">
+            <!-- Modern Tech Avatar Vector Illustration -->
+            <div class="avatar-box">
+              <svg class="avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Gradient Circle -->
+                <circle cx="100" cy="100" r="90" fill="url(#avatar-grad)" />
+                <!-- Developer Figure Representation -->
+                <circle cx="100" cy="72" r="32" fill="#e0e7ff" />
+                <path d="M42 165 C42 125, 68 116, 100 116 C132 116, 158 125, 158 165 Z" fill="#c7d2fe" />
+                <!-- Laptop / Tech Element -->
+                <rect x="64" y="140" width="72" height="42" rx="4" fill="#1e1b4b" />
+                <rect x="68" y="144" width="64" height="34" rx="2" fill="#0f172a" />
+                <path d="M80 156 L88 161 L80 166" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="92" y1="166" x2="102" y2="166" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+                <!-- Definitions -->
+                <defs>
+                  <linearGradient id="avatar-grad" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4f46e5" />
+                    <stop offset="1" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating Skill Badges -->
+          <div class="float-chip chip-1">
+            <span class="chip-icon">⚡</span>
+            <span>JavaScript ES6+</span>
+          </div>
+          <div class="float-chip chip-2">
+            <span class="chip-icon">🐍</span>
+            <span>Python</span>
+          </div>
+          <div class="float-chip chip-3">
+            <span class="chip-icon">🎨</span>
+            <span>Modern CSS3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">// ABOUT ME</span>
+        <h2 class="section-heading">Passionate Engineer & Web Creator</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-about">
+          <p class="about-text highlight">
+            I'm Divyesh, B.Tech AIML student passionate about AI/ML and Web Development. Intern at OASIS INFOBYTE.
+          </p>
+          <p class="about-text">
+            My engineering foundation bridges artificial intelligence and data-driven systems with modern full-stack web technologies like HTML5, CSS3, JavaScript, and Python. I thrive on translating complex computational problems into intuitive, clean, scalable, and responsive digital web experiences.
+          </p>
+          
+          <div class="stats-ribbon">
+            <div class="ribbon-item">
+              <span class="ribbon-num">3+</span>
+              <span class="ribbon-label">Oasis Projects Built</span>
+            </div>
+            <div class="ribbon-item">
+              <span class="ribbon-num">B.Tech</span>
+              <span class="ribbon-label">AIML Branch</span>
+            </div>
+            <div class="ribbon-item">
+              <span class="ribbon-num">100%</span>
+              <span class="ribbon-label">Responsive Designs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card education-card">
+          <h3 class="card-subtitle">
+            <svg class="icon-inline" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a10.978 10.978 0 00-.25 2.5v1.272c-.66.294-1.127.917-1.127 1.677 0 .76.467 1.383 1.127 1.677V16.5a1 1 0 001 1h8a1 1 0 001-1v-1.323c.66-.294 1.127-.917 1.127-1.677 0-.76-.467-1.383-1.127-1.677V10.55c0-.858-.09-1.696-.25-2.499l2.644-1.133a1 1 0 000-1.84l-7-3zM5.5 10.55c0-.623.08-1.229.231-1.808l4.269 1.83 4.269-1.83c.151.579.231 1.185.231 1.808v1.077c-.502.223-.88.66-1.026 1.196L10 13.5l-3.474-.727C6.38 12.237 6.002 11.8 5.5 11.577V10.55z"/>
+            </svg>
+            Academic Foundation
+          </h3>
+          <div class="edu-item">
+            <h4 class="edu-degree">Bachelor of Technology (B.Tech)</h4>
+            <p class="edu-field">Artificial Intelligence & Machine Learning (AIML)</p>
+            <span class="edu-badge">Core Disciplines:</span>
+            <ul class="edu-courses">
+              <li>Machine Learning & Neural Networks</li>
+              <li>Data Structures & Algorithms</li>
+              <li>Database Management (DBMS)</li>
+              <li>Web Technologies & Systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">// TECH STACK</span>
+        <h2 class="section-heading">Core Technical Skills</h2>
+        <p class="section-desc">Technologies, languages, and development tools I use to build scalable web applications.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1: Python -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap python-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.008 2.752h5.814v.827H3.92S0 5.768 0 11.94c0 6.17 3.42 5.952 3.42 5.952h2.04v-2.871s-.11-3.42 3.364-3.42h5.787v-.855H8.795s-3.364.082-3.364-3.284V4.945s-.355-3.31 6.483-3.31c6.837 0 6.17 2.926 6.17 2.926v2.263h-3.033v1.654h4.747s4.197-.47 4.197 5.706c0 6.177-3.694 5.986-3.694 5.986h-2.04v-2.925s.137-3.365-3.364-3.365H9.096v.854h5.814s3.364-.082 3.364 3.284v3.528s.356 3.31-6.483 3.31c-6.838 0-6.17-2.926-6.17-2.926v-2.264h3.033V17.82H3.907S-.29 18.29.29 12.113c0-6.176 3.694-5.985 3.694-5.985H6.02V3.257S5.883-.001 11.914 0zM8.74 1.764a.882.882 0 100 1.765.882.882 0 000-1.765zm6.52 18.707a.882.882 0 100 1.764.882.882 0 000-1.764z"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Python</h3>
+          <p class="skill-desc">Core programming, OOP, data structures, and automation scripting for AI/ML.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+          <span class="skill-meta">Advanced • AI/ML & Core Python</span>
+        </div>
+
+        <!-- Skill 2: NumPy -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap numpy-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">NumPy</h3>
+          <p class="skill-desc">N-dimensional array manipulation, linear algebra, vectorization, and mathematical computing.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+          <span class="skill-meta">Proficient • Numerical Computing</span>
+        </div>
+
+        <!-- Skill 3: Pandas -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap pandas-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Pandas</h3>
+          <p class="skill-desc">DataFrames manipulation, dataset cleaning, data transformation, and exploratory analysis.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+          <span class="skill-meta">Proficient • Data Analysis & Processing</span>
+        </div>
+
+        <!-- Skill 4: HTML5 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap html-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.234-2.625h11.156l.235-2.625H5.703l.703 7.875h8.922l-.375 4.188-4.047 1.093-4.047-1.093-.266-3.032H4.25l.484 5.594 7.243 1.968 7.242-1.968.969-10.969H8.531z"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">HTML5</h3>
+          <p class="skill-desc">Semantic markup, SEO optimization, and web accessibility standards (WCAG).</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+          <span class="skill-meta">Advanced • Semantic & Accessible</span>
+        </div>
+
+        <!-- Skill 5: CSS3 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap css-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.5H5.41l.235 2.625h12.476l-.25 2.625H8.766l.234 2.625h8.797l-.625 6.969-5.195 1.406-5.196-1.406-.328-3.688H4.297l.609 6.844 7.071 1.922 7.07-1.922 1.543-17.063z"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">CSS3</h3>
+          <p class="skill-desc">Modern Flexbox, CSS Grid, keyframes, transitions, and responsive mobile-first UI.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+          <span class="skill-meta">Advanced • Flexbox, Grid, Glassmorphism</span>
+        </div>
+
+        <!-- Skill 6: JavaScript -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap js-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.621-1.554-1.288 0-.438.368-.702.92-.702.575 0 1.059.207 1.403.736l2.162-1.38c-.736-1.15-1.932-1.794-3.565-1.794-2.208 0-3.657 1.311-3.657 3.22 0 1.633 1.035 2.484 2.944 3.243.943.391 1.633.667 1.633 1.38 0 .506-.46.782-1.127.782-.851 0-1.472-.345-1.955-1.15l-2.254 1.357c.759 1.449 2.093 2.185 4.21 2.185 2.438 0 3.864-1.288 3.864-3.414l-.082-.505zm-9.317.069c-.276 1.058-.989 1.748-2.139 1.748-.828 0-1.357-.414-1.633-1.035l-2.07 1.288c.782 1.495 2.162 2.139 3.841 2.139 2.438 0 4.232-1.38 4.232-3.887V11.23h-2.507v6.862l.276.253z"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">JavaScript (ES6+)</h3>
+          <p class="skill-desc">DOM manipulation, event handling, async operations, input validation, and algorithms.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+          <span class="skill-meta">Proficient • Modern ES6+ & DOM</span>
+        </div>
+
+        <!-- Skill 7: Git & GitHub -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap git-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l3.088 3.09c.642-.22 1.385-.078 1.9.438.748.748.748 1.96 0 2.708-.748.748-1.96.748-2.708 0-.54-.54-.677-1.32-.413-1.974L12.77 8.995v7.065c.19.102.368.237.525.4.748.748.748 1.96 0 2.708-.748.748-1.96.748-2.708 0-.748-.748-.748-1.96 0-2.708.194-.194.425-.333.676-.412V8.924c-.25-.079-.481-.218-.676-.412-.544-.543-.68-1.326-.41-1.984L7.387 3.738.453 10.672c-.604.604-.604 1.582 0 2.188l10.48 10.478c.604.604 1.582.604 2.186 0l10.427-10.43c.604-.603.604-1.582 0-2.188"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Git & GitHub</h3>
+          <p class="skill-desc">Version control workflows, commit history hygiene, branching, and pull requests.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+          <span class="skill-meta">Proficient • Collaboration & Versioning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">// PORTFOLIO WORK</span>
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-desc">Practical implementations built for the Oasis Infobyte Web Development Internship.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project Card 1: Landing Page -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="project-badge-tag">Oasis Task 1</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AURA PRO X - Product Landing Page</h3>
+            <p class="project-desc">
+              A visually polished, responsive static landing page for flagship wireless headphones featuring sticky glassmorphic navigation, SVG acoustic illustrations, floating spec badges, comparison table, and customer testimonials.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Flexbox / Grid</span>
+              <span class="tech-tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="../WebDev-L1-LandingPage/index.html" class="project-link primary" target="_blank">
+                <span>Live Preview</span>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
+              </a>
+              <a href="https://github.com/pinjaridivyesh-glitch/OIBSIP/tree/main/OIBSIP/WebDev-L1-LandingPage" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                <span>GitHub Repo</span>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2: Temperature Converter -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="project-badge-tag">Oasis Task 3</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Precision Temperature Converter</h3>
+            <p class="project-desc">
+              An interactive web converter supporting Celsius, Fahrenheit, and Kelvin. Engineered with input validation, absolute zero edge-case guardrails (-273.15°C / 0K), dynamic formula breakdown, and clear responsive UI.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">Validation</span>
+            </div>
+            <div class="project-links">
+              <a href="../WebDev-L1-TempConverter/index.html" class="project-link primary" target="_blank">
+                <span>Live Converter</span>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
+              </a>
+              <a href="https://github.com/pinjaridivyesh-glitch/OIBSIP/tree/main/OIBSIP/WebDev-L1-TempConverter" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                <span>GitHub Repo</span>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">// REACH OUT</span>
+        <h2 class="section-heading">Let's Connect & Collaborate</h2>
+        <p class="section-desc">Open for internships, collaborative projects, or engineering discussions.</p>
+      </div>
+
+      <div class="contact-card-wrap">
+        <div class="contact-info-panel">
+          <h3 class="panel-title">Contact Channels</h3>
+          <p class="panel-subtitle">Feel free to connect directly through any of the following platforms:</p>
+
+          <div class="contact-channel-list">
+            <a href="mailto:divyesh.aiml@gmail.com" class="channel-card">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-detail">
+                <span class="channel-name">Direct Email</span>
+                <span class="channel-val">divyesh.aiml@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/pinjaridivyesh-glitch" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="channel-detail">
+                <span class="channel-name">LinkedIn Profile</span>
+                <span class="channel-val">linkedin.com/in/pinjaridivyesh-glitch</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/pinjaridivyesh-glitch" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+              </div>
+              <div class="channel-detail">
+                <span class="channel-name">GitHub Repositories</span>
+                <span class="channel-val">github.com/pinjaridivyesh-glitch</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <h3 class="panel-title">Send a Quick Message</h3>
+          <form class="contact-form" id="portfolioContactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="senderName">Your Name</label>
+                <input type="text" id="senderName" placeholder="e.g. Alex Johnson" required>
+              </div>
+              <div class="form-field">
+                <label for="senderEmail">Email Address</label>
+                <input type="email" id="senderEmail" placeholder="e.g. alex@company.com" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="msgSubject">Subject</label>
+              <input type="text" id="msgSubject" placeholder="Internship Opportunity / Inquiry" required>
+            </div>
+            <div class="form-field">
+              <label for="msgBody">Message</label>
+              <textarea id="msgBody" rows="4" placeholder="Hello Divyesh, I reviewed your Oasis Infobyte projects..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="sendBtn">Send Message</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Divyesh.dev /&gt;</span>
+        <p class="footer-sub">AIML Student & Web Developer</p>
+      </div>
+      <div class="footer-center">
+        <p>Built with ❤️ for <strong>OASIS INFOBYTE Internship</strong> (Level 1 - Task 2)</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2026 Divyesh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
